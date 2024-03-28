@@ -1,0 +1,5 @@
+SHELL=/bin/sh
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:%%PREFIX%%/sbin:%%PREFIX%%/bin
+
+#minute	hour	mday	month	wday	who	command
+*/15	*	*	*	*	root	scrutiny-collector-metrics run

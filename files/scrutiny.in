@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# PROVIDE: scrutiny
+# REQUIRE: DAEMON
+# KEYWORD: shutdown
+
+# Add the following lines to /etc/rc.conf to enable scrutiny:
+# scrutiny_enable="YES"
+
+. /etc/rc.subr
+
+name="scrutiny"
+rcvar=scrutiny_enable
+
+load_rc_config "${name}"
+
+: ${scrutiny_enable="NO"}
+: ${scrutiny_user="root"}
+: ${scrutiny_group="wheel"}
+
+pidfile="/var/run/${name}.pid"
+command="%%PREFIX%%/bin/${name}"
+command_args="start"
+
+run_rc_command "$1"

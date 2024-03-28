@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# https://github.com/AnalogJ/scrutiny/blob/master/docs/TROUBLESHOOTING_INFLUXDB.md#setup-environmental-variables
+
+# replace the following values with correct values for your InfluxDB installation
+export INFLUXDB_ADMIN_TOKEN=pCqRq7xxxxxx-FZgNLfstIs0w==
+export INFLUXDB_ORG_ID=b2495xxxxx
+export INFLUXDB_HOSTNAME=http://localhost:8086
+
+# if you want to change the bucket name prefix below, you'll also need to update the setting in the scrutiny.yaml config file.
+export INFLUXDB_SCRUTINY_BUCKET_BASENAME=metrics
