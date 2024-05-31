@@ -1,5 +1,5 @@
-bin/scrutiny-collector-metrics
 bin/scrutiny
+bin/scrutiny-collector-metrics
 etc/cron.d/scrutiny-collector
 @sample %%ETCDIR%%/collector.yaml.sample
 @sample %%ETCDIR%%/scrutiny.yaml.sample
@@ -114,7 +114,7 @@ etc/cron.d/scrutiny-collector
 %%DATADIR%%/web/favicon-16x16.png
 %%DATADIR%%/web/favicon-32x32.png
 %%DATADIR%%/web/index.html
-%%DATADIR%%/web/main.3e58e74090ec87aa.js
+%%DATADIR%%/web/main.cf3798ce2cf0d051.js
 %%DATADIR%%/web/polyfills.e5561577adeea5cb.js
 %%DATADIR%%/web/runtime.6555aca5c1c1aea8.js
 %%DATADIR%%/web/styles.b931f3b9dcdfc7c6.css

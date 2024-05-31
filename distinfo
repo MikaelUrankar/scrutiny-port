@@ -1,7 +1,7 @@
-TIMESTAMP = 1711654662
-SHA256 (go/sysutils_scrutiny-port/scrutiny-v0.8.0/scrutiny-web-frontend.tar.gz) = f627dec3f797a6d012ff34016788fbed092697b80feaf05e3ebaa0b3460718a0
-SIZE (go/sysutils_scrutiny-port/scrutiny-v0.8.0/scrutiny-web-frontend.tar.gz) = 8550558
-SHA256 (go/sysutils_scrutiny-port/scrutiny-v0.8.0/v0.8.0.mod) = e4222996ccdb2714764847821ad3d1471ac756729d685be459f411dbde9474e8
-SIZE (go/sysutils_scrutiny-port/scrutiny-v0.8.0/v0.8.0.mod) = 3509
-SHA256 (go/sysutils_scrutiny-port/scrutiny-v0.8.0/v0.8.0.zip) = 508ab7f63a61ac88322ed578529dc7996e77014abb28987d615127714875a106
-SIZE (go/sysutils_scrutiny-port/scrutiny-v0.8.0/v0.8.0.zip) = 10019791
+TIMESTAMP = 1717170590
+SHA256 (go/sysutils_scrutiny-port/scrutiny-v0.8.1/scrutiny-web-frontend.tar.gz) = 1160db33f9b9d53a25e0a0dac2cb9381c04728b43b4616eff9a15a1aa08fda43
+SIZE (go/sysutils_scrutiny-port/scrutiny-v0.8.1/scrutiny-web-frontend.tar.gz) = 8546964
+SHA256 (go/sysutils_scrutiny-port/scrutiny-v0.8.1/v0.8.1.mod) = e4222996ccdb2714764847821ad3d1471ac756729d685be459f411dbde9474e8
+SIZE (go/sysutils_scrutiny-port/scrutiny-v0.8.1/v0.8.1.mod) = 3509
+SHA256 (go/sysutils_scrutiny-port/scrutiny-v0.8.1/v0.8.1.zip) = 9966afb281a5cb0b163c6cf117ece1618edfd3fbf6b4d2255d7eb4ee2dc4f9c8
+SIZE (go/sysutils_scrutiny-port/scrutiny-v0.8.1/v0.8.1.zip) = 10019991

@@ -17,9 +17,29 @@ load_rc_config "${name}"
 : ${scrutiny_enable="NO"}
 : ${scrutiny_user="root"}
 : ${scrutiny_group="wheel"}
+: ${scrutiny_flags:=""}
+: ${scrutiny_facility:="daemon"}
+: ${scrutiny_priority:="info"}
+: ${scrutiny_pid:="/var/run/scrutiny/${name}.pid"}
+: ${scrutiny_daemonflags:="-S -s ${scrutiny_priority} -l ${scrutiny_facility}"}
 
-pidfile="/var/run/${name}.pid"
-command="%%PREFIX%%/bin/${name}"
-command_args="start"
+# daemon
+procname="%%PREFIX%%/bin/${name}"
+command=/usr/sbin/daemon
+start_precmd="scrutiny_precmd"
+start_cmd="scrutiny_startcmd_daemon"
+
+scrutiny_precmd()
+{
+    install -d -o ${scrutiny_user} /var/run/scrutinyb2/
+}
+
+scrutiny_startcmd_daemon()                      
+{   
+    echo "Starting ${name}."
+    /usr/sbin/daemon -c -p ${scrutiny_pidfile} -S -s ${scrutiny_priority} -l ${scrutiny_facility} -T ${name} \
+        -u ${scrutiny_user} ${procname} start
+}
 
 run_rc_command "$1"
+

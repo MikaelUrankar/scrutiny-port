@@ -4,7 +4,7 @@
 
 PORTNAME=	scrutiny
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.8.0
+DISTVERSION=	0.8.1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://github.com/analogj/scrutiny/releases/download/v${DISTVERSION}/:web
 DISTFILES+=	scrutiny-web-frontend.tar.gz:web
